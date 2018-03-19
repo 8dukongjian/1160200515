@@ -1,0 +1,16 @@
+apply plugin: 'java'
+sourceSets {
+          main{
+                java{
+                      srcDirs = ['src']
+                     }
+               }
+          test{
+                 java{
+                       srcDirs = ['test']
+                       }
+                }
+}
+dependencies {
+     compile files('lib/junit-4.10.jar')
+}
